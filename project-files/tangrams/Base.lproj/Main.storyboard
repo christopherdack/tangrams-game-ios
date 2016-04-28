@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tangrams" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.71999999999999997" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4n7-YS-7kl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Drag and rotate shapes to form silhouette below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcv-bV-9q0">
+                                <rect key="frame" x="10" y="24" width="312" height="21"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.094117647058823528" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.92156862745098034" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lq6-pH-ZHG">
+                                <rect key="frame" x="10" y="55" width="120" height="120"/>
+                                <subviews>
+                                    <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9Y-IA-hlk">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gq8-9M-6ew" appends="YES" id="FY8-fZ-Ugh"/>
+                                    <outletCollection property="gestureRecognizers" destination="yR4-tC-gpg" appends="YES" id="tbJ-aQ-pIe"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BtM-K5-Net">
+                                <rect key="frame" x="10" y="185" width="60" height="60"/>
+                                <subviews>
+                                    <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vci-03-R9b">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sE7-Fg-zqZ" appends="YES" id="Da5-HO-1os"/>
+                                    <outletCollection property="gestureRecognizers" destination="jBG-z8-jJW" appends="YES" id="rKW-UV-VqB"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lw5-ig-1GP">
+                                <rect key="frame" x="10" y="257" width="60" height="119"/>
+                                <subviews>
+                                    <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSl-g4-TqZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="119"/>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MnY-fS-ZI1" appends="YES" id="fUJ-R1-uro"/>
+                                    <outletCollection property="gestureRecognizers" destination="ECB-CB-E6U" appends="YES" id="2Fp-xe-zNd"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gli-Wx-pJJ">
+                                <rect key="frame" x="10" y="390" width="120" height="120"/>
+                                <subviews>
+                                    <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SxE-1D-qIg">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mnK-7P-gtZ" appends="YES" id="zLc-Sj-6xd"/>
+                                    <outletCollection property="gestureRecognizers" destination="oB8-ie-YsR" appends="YES" id="M92-nK-E4W"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZSj-fE-mUM">
+                                <rect key="frame" x="10" y="522" width="60" height="60"/>
+                                <subviews>
+                                    <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ove-sF-sqs">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="552-Xx-Mzt" appends="YES" id="E5Y-nB-9E2"/>
+                                    <outletCollection property="gestureRecognizers" destination="Mpg-MS-CAJ" appends="YES" id="MtJ-B7-ro2"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="omm-Jt-uND">
+                                <rect key="frame" x="90" y="522" width="60" height="60"/>
+                                <subviews>
+                                    <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RqR-VJ-xeM">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vou-T7-gZ5" appends="YES" id="eYd-vv-Ois"/>
+                                    <outletCollection property="gestureRecognizers" destination="CDR-79-eh5" appends="YES" id="2ad-hp-aNH"/>
+                                </connections>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iO8-fN-Sj9">
+                                <rect key="frame" x="10" y="636" width="72" height="72"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rt8-qF-YWK">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7JE-gs-w0a">
+                                <rect key="frame" x="10" y="45" width="384" height="2"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.094117647058823528" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vot-1H-jeN">
+                                <rect key="frame" x="96" y="678" width="119" height="30"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.094117647058823528" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <state key="normal" title="Show Solution">
+                                    <color key="titleColor" red="1" green="0.92156862745098034" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShowSolution:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSN-ye-qdn"/>
+                                </connections>
+                            </button>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rZU-by-UkF">
+                                <rect key="frame" x="230" y="636" width="72" height="72"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJI-CO-Vuc">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCn-Nr-K8K">
+                                <rect key="frame" x="316" y="678" width="78" height="30"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.094117647058823528" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="0.92156862745098034" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fjk-rp-9PM"/>
+                                </connections>
+                            </button>
+                            <view opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x30-Pc-za9">
+                                <rect key="frame" x="180" y="522" width="121" height="62"/>
+                                <subviews>
+                                    <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BPb-4X-2Vv">
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="62"/>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ewh-VG-eru" appends="YES" id="Run-rA-Dzx"/>
+                                    <outletCollection property="gestureRecognizers" destination="WuH-g7-td3" appends="YES" id="ith-QW-8Bs"/>
+                                </connections>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aXF-ab-kn9">
+                                <rect key="frame" x="10" y="626" width="384" height="2"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.094117647058823528" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70588235294117641" green="0.62745098039215685" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="imgBackground" destination="4n7-YS-7kl" id="NCz-dK-hf4"/>
+                        <outlet property="imgRhombus" destination="BPb-4X-2Vv" id="gAA-kQ-tWA"/>
+                        <outlet property="imgSilhouette" destination="rt8-qF-YWK" id="Ovc-Zo-LzQ"/>
+                        <outlet property="imgSolution" destination="UJI-CO-Vuc" id="Uca-ec-o0v"/>
+                        <outlet property="imgSquare" destination="vci-03-R9b" id="LH0-Pz-vuF"/>
+                        <outlet property="imgTriangleLarge1" destination="u9Y-IA-hlk" id="5Yz-34-uhK"/>
+                        <outlet property="imgTriangleLarge2" destination="SxE-1D-qIg" id="Ngl-sc-q2g"/>
+                        <outlet property="imgTriangleMedium" destination="pSl-g4-TqZ" id="Nsu-sk-2Tq"/>
+                        <outlet property="imgTriangleSmall1" destination="ove-sF-sqs" id="qMp-xu-i0b"/>
+                        <outlet property="imgTriangleSmall2" destination="RqR-VJ-xeM" id="JrH-0C-xjM"/>
+                        <outlet property="viewRhombus" destination="x30-Pc-za9" id="PXJ-XY-d8G"/>
+                        <outlet property="viewSilhouette" destination="iO8-fN-Sj9" id="nBJ-im-CfU"/>
+                        <outlet property="viewSolution" destination="rZU-by-UkF" id="FVW-3J-GtS"/>
+                        <outlet property="viewSquare" destination="BtM-K5-Net" id="Tcy-K7-OXG"/>
+                        <outlet property="viewTriangleLarge1" destination="lq6-pH-ZHG" id="5sE-mu-daf"/>
+                        <outlet property="viewTriangleLarge2" destination="Gli-Wx-pJJ" id="pRO-bf-1Kr"/>
+                        <outlet property="viewTriangleMedium" destination="lw5-ig-1GP" id="Weq-7m-iiJ"/>
+                        <outlet property="viewTriangleSmall1" destination="ZSj-fE-mUM" id="Vcv-GT-Phe"/>
+                        <outlet property="viewTriangleSmall2" destination="omm-Jt-uND" id="Z4n-mt-Vfl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="gq8-9M-6ew" userLabel="TriangleLarge1-Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="PanShape:" destination="BYZ-38-t0r" id="NTO-dY-grk"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="yR4-tC-gpg" userLabel="TriangleLarge1-Rotation Gesture Recognizer">
+                    <connections>
+                        <action selector="RotateShape:" destination="BYZ-38-t0r" id="kPa-TV-lzM"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="sE7-Fg-zqZ" userLabel="Square-Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="PanShape:" destination="BYZ-38-t0r" id="YbC-Of-3Vy"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="jBG-z8-jJW" userLabel="Square-Rotation Gesture Recognizer">
+                    <connections>
+                        <action selector="RotateShape:" destination="BYZ-38-t0r" id="ES2-bQ-1ft"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="MnY-fS-ZI1" userLabel="TriangleMedium-Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="PanShape:" destination="BYZ-38-t0r" id="ByX-Yi-iOc"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="ECB-CB-E6U" userLabel="TriangleMedium-Rotation Gesture Recognizer">
+                    <connections>
+                        <action selector="RotateShape:" destination="BYZ-38-t0r" id="NVE-KR-xZq"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="mnK-7P-gtZ" userLabel="TriangleLarge2-Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="PanShape:" destination="BYZ-38-t0r" id="hvX-cj-s21"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="oB8-ie-YsR" userLabel="TriangleLarge2-Rotation Gesture Recognizer">
+                    <connections>
+                        <action selector="RotateShape:" destination="BYZ-38-t0r" id="MOL-j7-2g8"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="552-Xx-Mzt" userLabel="TriangleSmall1-Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="PanShape:" destination="BYZ-38-t0r" id="rQ7-xd-N3d"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="Mpg-MS-CAJ" userLabel="TriangleSmall1-Rotation Gesture Recognizer">
+                    <connections>
+                        <action selector="RotateShape:" destination="BYZ-38-t0r" id="tc0-uj-V97"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="vou-T7-gZ5" userLabel="TriangleSmall2-Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="PanShape:" destination="BYZ-38-t0r" id="bBb-Cc-Uci"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="CDR-79-eh5" userLabel="TriangleSmall2-Rotation Gesture Recognizer">
+                    <connections>
+                        <action selector="RotateShape:" destination="BYZ-38-t0r" id="C9D-4W-LEy"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ewh-VG-eru" userLabel="Rhombus-Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="PanShape:" destination="BYZ-38-t0r" id="lNc-xf-M91"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="WuH-g7-td3" userLabel="Rhombus-Rotation Gesture Recognizer">
+                    <connections>
+                        <action selector="RotateShape:" destination="BYZ-38-t0r" id="2kc-EO-smG"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="245" y="308"/>
+        </scene>
+    </scenes>
+</document>
